@@ -75,6 +75,15 @@
         - Disadvantage: Inefficient, because all attributes are dynamic; Loss of error detection.
 
 5. What do you mean by scope of variable? differentiate between global and local variable.
+
+    Answer:
+
+    **Scope of variable**: The **scope** of a variable is the range of statements in which the variable is visible.
+
+    **Local variable**: A variable is local in a program unit or block if it is declared there.
+
+    **Global variable**: Global variables are a special category of nonlocal variables. The nonlocal variables of a program unit are those that are visible in the unit but not declared there.
+
 6. What are the primitive data types? Explain the IEEE floating point standard 754.
 7. Explain different types of strings in different languages with the string operation.
 8. Explain different ty[es of enumarated data types with example.
