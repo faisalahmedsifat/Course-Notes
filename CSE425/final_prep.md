@@ -520,12 +520,77 @@
 ## L9.1, L9.2
 
 30. Define subprogram, subprogram call and parameter profile.
-31. Differentiate between formal paramenter and actual parameter.
+
+    Answer:
+
+    **subprogram**: A subprogram definition describes the interface to and the actions of the ssubprogram abstraction.
+    1. Each subprogram has a single entry point.
+    2. the calling program unit is supended during the execution of the suprogram, which implies that there is only one subprogram in execution at any given time.
+    3. Control always returns to the caller when the subprogram execution terminates.
+
+    **subprogram call**: is the explicit request that a specific subprogram be executed.
+    **parameter profile (aka signature)**: of a subprogram is the number, order, and types of its parameters.
+
+31. Differentiate between formal parameter and actual parameter.
+
+    Answer:
+
+    **formal Parameter**:
+    - A `formal parameter` is a dummy variable listed in the subprogram header and used in the subprogram.
+
+    **actual Parameter**:
+    - represents a value or address used in the subprogram call statement.
+
 32. Differentiate between procedure and function.
+
+    Answer:
+
+    There are two categories of subprograms
+    - **Procedures**: are collection of statements that define parameterized computations.
+    - **Functions**: structurall resemble procedures but are semantically modeled on mathematical functions
+      - They are expected to produce no side effects
+      - In practice, program functions have side effects.
+
 33. Explain different types of parameter passing with example.
-34. Differentiate between pass-by-values pass by variable reference and pass by name.
+
+    Answer:
+
+    **Types of parameter passing**:
+    - In mode
+    - Out mode
+    - Inout mode
+    ![Parameter passing](images/parameter%20passing.png)
+
+34. Differentiate between pass-by-values, pass by variable reference and pass by name.
+
+    Answer:
+
+    **Pass by value**:
+    **Pass by Reference**:
+    **Pass by name**:
+
 35. Explain call semantics and return semantics.
+
+    Answer:
+
+    **Call Semantics** :
+    - Save the execution status of the caller
+    - Pass the parameters
+    - Pass the return address to the called
+    - Transfer control to the called
+
+    **Return semantics**:
+    - If pass-by-value-resulr or out more parameters are used, move the current values of those parameters to their corresponding actual parameters
+    - If it is a function, move the functional value to a place the caller can get it
+    - Restore the execution status of the caller
+    - Transfer control back to the caller.
+
 36. What do you mean by activation record? Explain with example in C/C++.
+
+    Answer:
+    **Activation record**:
+    The format, or layout, of the non-code part of an executing subprogram is called an activation record.
+
 37. Explain the activation record of recursion fatorial function/recursive fibonacci number.
 38. Explain the nested subprogram with example.
 
@@ -536,7 +601,7 @@
 41. What do you mean by encapsulation? How can information be hided in C++? Explain with example.
 42. What are the uses of constructor and destructor?
 43. Write down the stck ADT in C++.
-44. What do you mean by frind function/class?
+44. What do you mean by friend function/class?
 45. What do you mean by inheritance in C++?
 46. What do you mean by abstract method/class?
 47. Differentiate between subclass and superclass.
